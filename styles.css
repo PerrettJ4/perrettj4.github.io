@@ -13,14 +13,14 @@
   justify-content: space-evenly;
   text-align: center;
   align-items: center;
-  height: 400px;
-  width: 400px;
+  height: 300px;
+  width: 300px;
   margin: auto;
   overflow-x: clip;
   border-radius: 10px;
-  box-shadow: 0 0 20px #76d864;
+  box-shadow: 0 0 20px #ff335e;
 }
 #tile:hover {
   transition-duration: 0.5s;
-  box-shadow: 0 0 35px #81e070;
+  box-shadow: 0 0 35px #3201c8;
 }
