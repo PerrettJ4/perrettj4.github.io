@@ -1,0 +1,26 @@
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+   backgroundColor: "whitesmoke";
+}
+
+.tile-title :hover {
+  transition-duration: 0.4s;
+  transform: scale(1.1);
+}
+.tile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+  align-items: center;
+  height: 400px;
+  width: 400px;
+  margin: auto;
+  overflow-x: clip;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #76d864;
+}
+#tile:hover {
+  transition-duration: 0.5s;
+  box-shadow: 0 0 35px #81e070;
+}
