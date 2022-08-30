@@ -3,6 +3,18 @@ body {
   background-color: whitesmoke;
   margin: 6%;
 }
+body::after {
+  content: "";
+  background-image: url("./splash1.png");
+  background-repeat: repeat;
+  opacity: 0.1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
 
 #logo {
   border-radius: 10%;
