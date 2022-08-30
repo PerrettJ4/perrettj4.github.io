@@ -3,11 +3,12 @@ body {
   background-color: whitesmoke;
   margin: 6%;
 }
-body::after {
+
+/* body::after {
   content: "";
   background-image: url("./splash1.png");
   background-repeat: repeat;
-  background-size: 20%;
+  background-size: 80%;
   opacity: 0.2;
   filter: invert(13%) sepia(5%) saturate(175%) hue-rotate(22deg) brightness(93%)
     contrast(103%) grayscale(1);
@@ -17,7 +18,7 @@ body::after {
   right: 0;
   position: absolute;
   z-index: -1;
-}
+} */
 
 #logo {
   border-radius: 10%;
@@ -69,10 +70,16 @@ body::after {
     background-color: #313131;
     color: white;
   }
+  body::after {
+    opacity: 0.2;
+    filter: invert(13%) sepia(5%) saturate(175%) hue-rotate(22deg)
+      brightness(93%) contrast(103%) grayscale(1);
+  }
   .tile {
     background-color: rgb(34, 31, 31);
   }
 }
+
 @media (prefers-color-scheme: light) {
   body {
     background-color: whitesmoke;
