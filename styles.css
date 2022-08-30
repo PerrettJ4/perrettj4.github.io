@@ -15,7 +15,7 @@ body {
   flex-wrap: wrap;
   justify-content: start;
   align-items: flex-start;
-  margin: 6%;
+
   height: 100%;
   width: 100%;
 }
@@ -32,8 +32,7 @@ body {
   align-items: center;
   height: 300px;
   width: 300px;
-  margin-right: 100px;
-  margin-bottom: 100px;
+  margin: 6%;
   overflow-x: clip;
   border-radius: 10px;
   box-shadow: 0 3px 25px #ff335e;
