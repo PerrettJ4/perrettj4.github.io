@@ -7,7 +7,10 @@ body::after {
   content: "";
   background-image: url("./splash1.png");
   background-repeat: repeat;
-  opacity: 0.1;
+  background-size: 20%;
+  opacity: 0.2;
+  filter: invert(13%) sepia(5%) saturate(175%) hue-rotate(22deg) brightness(93%)
+    contrast(103%) grayscale(1);
   top: 0;
   left: 0;
   bottom: 0;
