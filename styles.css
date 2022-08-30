@@ -1,21 +1,29 @@
-:root {
+body {
   font-family: Arial, Helvetica, sans-serif;
-   backgroundColor: "whitesmoke";
-  margin:'6%'
+  background-color: whitesmoke;
+  margin: 6%;
 }
 
-.tilecontainer {
-  display: flex;
-  justify-content: start;
-  margin: "6%";
-  height: '100%';
-  width: '100%';
+#logo {
+  border-radius: 10%;
+  box-shadow: 0 2px 3px black;
 }
-.tile-title :hover {
+
+#container {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: flex-start;
+  margin: 6%;
+  height: 100%;
+  width: 100%;
+}
+#tiletitle:hover {
   transition-duration: 0.4s;
   transform: scale(1.1);
 }
 .tile {
+  background-color: rgb(255, 255, 255);
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -23,12 +31,38 @@
   align-items: center;
   height: 300px;
   width: 300px;
-  margin: auto;
+  margin-right: 100px;
   overflow-x: clip;
   border-radius: 10px;
-  box-shadow: 0 0 20px #ff335e;
+  box-shadow: 0 3px 25px #ff335e;
 }
 #tile:hover {
   transition-duration: 0.5s;
-  box-shadow: 0 0 35px #3201c8; 
+  box-shadow: 0 7px 35px #3201c8;
+}
+#worldcuptile {
+  box-shadow: 0 3px 25px #fec310;
+}
+#worldcuptile:hover {
+  transition-duration: 0.5s;
+  box-shadow: 0 7px 35px #56042c;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #313131;
+    color: white;
+  }
+  .tile {
+    background-color: rgb(34, 31, 31);
+  }
+}
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: whitesmoke;
+    color: black;
+  }
+  .tile {
+    background-color: rgb(255, 255, 255);
+  }
 }
