@@ -12,6 +12,7 @@ body {
 #container {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: start;
   align-items: flex-start;
   margin: 6%;
