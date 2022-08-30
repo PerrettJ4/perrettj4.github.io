@@ -32,6 +32,7 @@ body {
   height: 300px;
   width: 300px;
   margin-right: 100px;
+  margin-bottom: 100px;
   overflow-x: clip;
   border-radius: 10px;
   box-shadow: 0 3px 25px #ff335e;
