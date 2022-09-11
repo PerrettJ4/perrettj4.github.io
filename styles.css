@@ -57,11 +57,18 @@ body::after {
   box-shadow: 0 7px 35px #3201c8;
 }
 #worldcuptile {
-  box-shadow: 0 3px 25px #fec310;
+  box-shadow: 0 3px 25px #49bce3;
 }
 #worldcuptile:hover {
   transition-duration: 0.5s;
   box-shadow: 0 7px 35px #56042c;
+}
+#formulaonetile {
+  box-shadow: 0 3px 25px black;
+}
+#formulaonetile:hover {
+  transition-duration: 0.5s;
+  box-shadow: 0 7px 35px red;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -79,7 +86,7 @@ body::after {
   }
 }
 
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: dark) {
   body {
     background-color: #f5f3f5;
     color: black;
