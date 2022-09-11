@@ -64,7 +64,7 @@ body::after {
   box-shadow: 0 7px 35px #56042c;
 }
 #formulaonetile {
-  box-shadow: 0 3px 25px black;
+  box-shadow: 0 3px 25px silver;
 }
 #formulaonetile:hover {
   transition-duration: 0.5s;
