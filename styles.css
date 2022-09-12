@@ -86,7 +86,7 @@ body::after {
   }
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   body {
     background-color: #f5f3f5;
     color: black;
