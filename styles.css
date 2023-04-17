@@ -35,6 +35,9 @@ body::after {
   align-items: center;
   margin-bottom: 25%;
 }
+#container2 {
+  margin: 10%;
+}
 
 .flickity-button-icon {
   fill: green;
@@ -48,12 +51,12 @@ body::after {
 #p1 {
   margin-top: 28%;
   margin-bottom: 4%;
-  font-size: 7vw;
+  font-size: 7.5vw;
   font-weight: 800;
 }
 #p2 {
   margin-bottom: 20%;
-  font-size: 4vw;
+  font-size: 4.9vw;
   font-weight: 600;
 }
 
@@ -101,9 +104,6 @@ body::after {
 .gallery-cell {
   border-radius: 20px;
   overflow: hidden;
-  border-color: #313131;
-  border-width: 10px;
-  border: #313131;
 }
 
 a {
