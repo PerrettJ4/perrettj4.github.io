@@ -9,7 +9,7 @@ body {
 body::after {
   content: "";
   background-image: url("./splash1.png");
-  background-repeat: repeat;
+  background-repeat: repeat space;
   background-size: 100%;
   opacity: 0.2;
 
@@ -152,21 +152,29 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-top: 6%;
+    margin-bottom: 0%;
   }
   #container2,
   #container1 {
-    width: 40%;
+    width: 30%;
     height: 100%;
+    margin-bottom: 0%;
+  }
+  #container2 {
+    margin: 31%;
+    margin-top: 5%;
+    margin-bottom: 5%;
   }
   #p1 {
     margin-top: 28%;
     margin-bottom: 4%;
-    font-size: 3.5vw;
+    font-size: 1.9vw;
     font-weight: 800;
   }
   #p2 {
     margin-bottom: 20%;
-    font-size: 2vw;
+    font-size: 1vw;
     font-weight: 600;
   }
 }
