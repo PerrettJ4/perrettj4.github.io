@@ -108,32 +108,38 @@ a {
   justify-content: center;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   body {
     background-color: #313131;
     color: white;
   }
   body::after {
-    opacity: 0.2;
+    opacity: 0.1;
     filter: invert(13%) sepia(5%) saturate(175%) hue-rotate(22deg)
       brightness(93%) contrast(103%) grayscale(1);
   }
   .tile {
     /* background-color: rgb(34, 31, 31); */
   }
+  #leaguepredictor {
+    filter: brightness(100%);
+  }
 }
 
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: dark) {
   body {
     background-color: #f5f3f5;
     color: black;
   }
   body::after {
-    opacity: 0.3;
+    opacity: 0.2;
     filter: invert(100%) sepia(0%) saturate(4160%) hue-rotate(63deg)
       brightness(115%) contrast(92%) grayscale(1);
   }
   .tile {
     /* background-color: rgb(255, 255, 255); */
+  }
+  #leaguepredictor {
+    filter: brightness(5%);
   }
 }
