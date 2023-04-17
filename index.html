@@ -11,15 +11,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:wght@500;600;800&display=swap"
         rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <!-- JavaScript -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#ff335e" />
+
 </head>
 
 <body>
     <!-- <h1>Fantasy League Predictor</h1> -->
     <div id="container1">
-        <img height='auto' width='95%' id="leaguepredictor" src='title1white.png' />
+        <img height='auto' width='80%' id="leaguepredictor" src='title1white.png' />
 
         <!--     <p>Over 20,000 cumulative downloads in the past 3 months!</p> -->
         <p id="p1">Put your knowledge to the test</p>
@@ -34,50 +39,40 @@
             <img height='auto' width="70%" src='google-play-badge.png' />
         </a>
     </div>
-
-    <!-- <div id="container"> -->
-    <!-- <div>
-            <img id="logo" height="100" width="100"
-                src='https://is2-ssl.mzstatic.com/image/thumb/Purple122/v4/1b/76/be/1b76bef0-170b-aecf-c061-5b76c2f311cb/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/460x0w.webp' />
-        </div> -->
-    <!-- <div class='tile' id="tile">
-
-        </div> -->
-    <!-- <img height='auto' width='55%'
-            src='https://is5-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/13/d3/78/13d378ab-a1e8-ad03-4f23-e98457532149/8f1522a4-effa-4604-9bc5-b2093426712e_2796-4-8__U00284_U0029.png/230x0w.webp' /> -->
-    <!--         <div class='tile' id="worldcuptile">
-            <div>
-                <h3 id='tiletitle'>FT: World Cup 2022</h3>
-                <img id="logo" height="50" width="50" src='./worldcupicon.png' />
+    <!-- Flickity HTML init -->
+    <div id="container2">
+        <div class="gallery js-flickity" data-flickity='{ "freeScroll": true, "wrapAround": true, "autoPlay": 5000}'>
+            <div class="gallery-cell">
+                <img class="cell-image" width="100%" height: "100%" src='1.png' />
             </div>
-           <a
-                onclick="window.location.href='https://apps.apple.com/bf/app/fantasy-table-world-cup/id1644524783';return false;">
-                <img src='Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg' />
-            </a>
-            <a
-                onclick="window.location.href='https://play.google.com/store/apps/details?id=com.perrettj4.FantasyTableWorldCup&hl=en&gl=US';return false;">
-                <img height='auto' width='45%' src='google-play-badge.png' />
-            </a>
-        </div> -->
-    <!--         <div class='tile' id="formulaonetile">
-            <div>
-                <h3 id='tiletitle'>FT: Formula One</h3>
-                <img id="logo" height="50" width="50" src='./icon1.png' />
+            <div class="gallery-cell">
+                <img class="cell-image" width="100%" height: "100%" src='2.png' />
             </div>
-            <h4 id='tiletitle'>Coming Soon!</h4>
-            <div height="100" width="50"></div>
-            <div height="100" width="50"></div>
-            <div height="100" width="50"></div>
-            <!-- <a
-                onclick="window.location.href='https://apps.apple.com/bf/app/fantasy-table-league-predictor/id1639002980';return false;">
-                <img src='Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg' />
-            </a>
-            <a
-                onclick="window.location.href='https://play.google.com/store/apps/details?id=com.perrettj4.fantasytable&hl=en_GB&gl=US';return false;">
-                <img height='auto' width='45%' src='google-play-badge.png' />
-            </a> 
-        </div> -->
-    <!-- </div> -->
+            <div class="gallery-cell">
+                <img class="cell-image" width="100%" height: "100%" src='3.png' />
+            </div>
+            <div class="gallery-cell">
+                <img class="cell-image" width="100%" height: "100%" src='4.png' />
+            </div>
+            <div class="gallery-cell">
+                <img class="cell-image" width="100%" height: "100%" src='5.png' />
+            </div>
+            <div class="gallery-cell">
+                <img class="cell-image" width="100%" height: "100%" src='6.png' />
+            </div>
+            <div class="gallery-cell">
+                <img class="cell-image" width="100%" height: "100%" src='7.png' />
+            </div>
+            <div class="gallery-cell">
+                <img class="cell-image" width="100%" height: "100%" src='8.png' />
+            </div>
+        </div>
+    </div>
+
+
+
+
+
 </body>
 
 </html>
