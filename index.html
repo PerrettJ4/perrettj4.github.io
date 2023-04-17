@@ -6,32 +6,46 @@
         href="https://is2-ssl.mzstatic.com/image/thumb/Purple122/v4/1b/76/be/1b76bef0-170b-aecf-c061-5b76c2f311cb/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/460x0w.webp" />
     <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
-    <title>Fantasy Table</title>
+    <title>Fantasy League Predictor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:wght@500;600;800&display=swap"
+        rel="stylesheet">
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#ff335e" />
 </head>
 
 <body>
-    <h1>Fantasy Table League Predictor</h1>
-<!--     <p>Over 20,000 cumulative downloads in the past 3 months!</p> -->
-    <p>Create your prediction and challenge friends! Free to play, no login or signup, and no ads.</p>
+    <!-- <h1>Fantasy League Predictor</h1> -->
+    <div id="container1">
+        <img height='auto' width='95%' id="leaguepredictor" src='title1white.png' />
+
+        <!--     <p>Over 20,000 cumulative downloads in the past 3 months!</p> -->
+        <p id="p1">Come and put your sporting knowledge to the test</p>
+        <p id="p2">The unique and 100% free sports league prediction application.</p>
+        <a
+            onclick="window.location.href='https://apps.apple.com/bf/app/fantasy-table-league-predictor/id1639002980';return false;">
+            <img width="70%"
+                src='https://www.familybankonline.com/wp-content/uploads/2017/07/apple-app-store-badge.png' />
+        </a>
+        <a
+            onclick="window.location.href='https://play.google.com/store/apps/details?id=com.perrettj4.fantasytable&hl=en_GB&gl=US';return false;">
+            <img height='auto' width="70%" src='google-play-badge.png' />
+        </a>
+    </div>
+
     <div id="container">
+        <!-- <div>
+            <img id="logo" height="100" width="100"
+                src='https://is2-ssl.mzstatic.com/image/thumb/Purple122/v4/1b/76/be/1b76bef0-170b-aecf-c061-5b76c2f311cb/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/460x0w.webp' />
+        </div> -->
         <div class='tile' id="tile">
-            <div>
-                <h3 id='tiletitle'>FTLP</h3>
-                <img id="logo" height="50" width="50"
-                    src='https://is2-ssl.mzstatic.com/image/thumb/Purple122/v4/1b/76/be/1b76bef0-170b-aecf-c061-5b76c2f311cb/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/460x0w.webp' />
-            </div>
-            <a
-                onclick="window.location.href='https://apps.apple.com/bf/app/fantasy-table-league-predictor/id1639002980';return false;">
-                <img src='Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg' />
-            </a>
-            <a
-                onclick="window.location.href='https://play.google.com/store/apps/details?id=com.perrettj4.fantasytable&hl=en_GB&gl=US';return false;">
-                <img height='auto' width='45%' src='google-play-badge.png' />
-            </a>
+
         </div>
-<!--         <div class='tile' id="worldcuptile">
+        <!-- <img height='auto' width='55%'
+            src='https://is5-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/13/d3/78/13d378ab-a1e8-ad03-4f23-e98457532149/8f1522a4-effa-4604-9bc5-b2093426712e_2796-4-8__U00284_U0029.png/230x0w.webp' /> -->
+        <!--         <div class='tile' id="worldcuptile">
             <div>
                 <h3 id='tiletitle'>FT: World Cup 2022</h3>
                 <img id="logo" height="50" width="50" src='./worldcupicon.png' />
@@ -45,7 +59,7 @@
                 <img height='auto' width='45%' src='google-play-badge.png' />
             </a>
         </div> -->
-<!--         <div class='tile' id="formulaonetile">
+        <!--         <div class='tile' id="formulaonetile">
             <div>
                 <h3 id='tiletitle'>FT: Formula One</h3>
                 <img id="logo" height="50" width="50" src='./icon1.png' />
