@@ -40,8 +40,15 @@ body::after {
   margin: 10%;
 }
 
-.flickity-button-icon {
-  fill: green;
+/* position outside */
+.flickity-prev-next-button.previous {
+  left: -40px;
+}
+.flickity-prev-next-button.next {
+  right: -40px;
+}
+.flickity-button {
+  display: none;
 }
 
 #p1,
@@ -162,8 +169,11 @@ a {
     height: 100%;
     margin-bottom: 0%;
   }
+  #container1 {
+    margin-left: 20%;
+  }
   #container2 {
-    margin: 31%;
+    margin: 22%;
     margin-top: 5%;
     margin-bottom: 5%;
   }
