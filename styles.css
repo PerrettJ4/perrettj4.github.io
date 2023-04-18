@@ -119,48 +119,6 @@ a {
   justify-content: center;
 }
 
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #313131;
-    color: white;
-  }
-  body::after {
-    opacity: 0.1;
-    filter: invert(13%) sepia(5%) saturate(175%) hue-rotate(22deg)
-      brightness(93%) contrast(103%) grayscale(1);
-  }
-  .gallery-cell {
-    border-radius: 20px;
-    overflow: hidden;
-    border: 9px solid #55555577;
-  }
-
-  #leaguepredictor {
-    filter: brightness(100%);
-  }
-}
-
-@media (prefers-color-scheme: light) {
-  body {
-    background-color: #f5f3f5;
-    color: black;
-  }
-  body::after {
-    opacity: 0.2;
-    filter: invert(100%) sepia(0%) saturate(4160%) hue-rotate(63deg)
-      brightness(115%) contrast(92%) grayscale(1);
-  }
-  .gallery-cell {
-    border-radius: 20px;
-    overflow: hidden;
-    border: 9px solid #ff335e;
-  }
-
-  #leaguepredictor {
-    filter: brightness(5%);
-  }
-}
-
 @media only screen and (min-width: 1504px) {
   body {
     display: flex;
@@ -193,5 +151,43 @@ a {
     margin-bottom: 20%;
     font-size: 1vw;
     font-weight: 600;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #313131;
+    color: white;
+  }
+  body::after {
+    opacity: 0.15;
+    filter: invert(13%) sepia(5%) saturate(175%) hue-rotate(22deg)
+      brightness(93%) contrast(103%) grayscale(1);
+  }
+  .gallery-cell {
+    border: 8px solid #55555577;
+  }
+
+  #leaguepredictor {
+    filter: brightness(100%);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: #f5f3f5;
+    color: black;
+  }
+  body::after {
+    opacity: 0.2;
+    filter: invert(100%) sepia(0%) saturate(4160%) hue-rotate(63deg)
+      brightness(115%) contrast(92%) grayscale(1);
+  }
+  .gallery-cell {
+    border: 8px solid #55555577;
+  }
+
+  #leaguepredictor {
+    filter: brightness(5%);
   }
 }
