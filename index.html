@@ -73,11 +73,22 @@
 
 
     <script>
+
         const openAndroidStore = async () => {
-            await window.open('https://play.google.com/store/apps/details?id=com.perrettj4.fantasytable'); return false
+            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                await window.open('://market/details?id=com.perrettj4.fantasytable'); return false
+            } else {
+
+                await window.open('https://play.google.com/store/apps/details?id=com.perrettj4.fantasytable'); return false
+            }
         }
         const openAppleStore = async () => {
-            await window.open('https://apps.apple.com/bf/app/fantasy-table-league-predictor/id1639002980'); return false
+            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                await window.open('itms-apps://apps.apple.com/bf/app/fantasy-table-league-predictor/id1639002980'); return false
+            } else {
+
+                await window.open('https://apps.apple.com/bf/app/fantasy-table-league-predictor/id1639002980'); return false
+            }
         }
 
     </script>
