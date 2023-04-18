@@ -29,33 +29,15 @@
         <!--     <p>Over 20,000 cumulative downloads in the past 3 months!</p> -->
         <p id="p1">Put your knowledge to the test</p>
         <p id="p2">The 100% free sports league prediction app</p>
-        <!-- <a onClick="window.open('https://apps.apple.com/bf/app/fantasy-table-league-predictor/id1639002980', '_system')">
+        <a onclick="openAppleStore()">
             <img width="70%"
                 src='https://www.familybankonline.com/wp-content/uploads/2017/07/apple-app-store-badge.png' />
-        </a> -->
+        </a>
 
-        <a href="external:https://play.google.com/store/apps/details?id=com.perrettj4.fantasytable"
-            onclick="window.open('external:https://play.google.com/store/apps/details?id=com.perrettj4.fantasytable', 'mozillaTab', '_system'); return false"
-            target="SingleSecondaryWindowName">
+        <a onclick="openAndroidStore()">
             <img height='auto' width="70%" src='google-play-badge.png' />
         </a>
-        =
-        <div onclick="openStore3()">
-            <img height='auto' width="70%" src='google-play-badge.png' />
-        </div>
-        <div onclick="openStore2()">
-            <img height='auto' width="70%" src='google-play-badge.png' />
-        </div>
-        =
-        <div
-            onblur="window.open('https://play.google.com/store/apps/details?id=com.perrettj4.fantasytable', 'tab', '_system'); return false">
-            <img height='auto' width="70%" src='google-play-badge.png' />
-        </div>
 
-        <div onclick="openStore()">
-            <p>Open Store</p>
-        </div>
-        <p>toast5</p>
     </div>
     <!-- Flickity HTML init -->
     <div id="container2">
@@ -91,15 +73,13 @@
 
 
     <script>
-        const openStore = async () => {
+        const openAndroidStore = async () => {
             await window.open('market://details?id=com.perrettj4.fantasytable', '_system', '_system'); return false
         }
-        const openStore3 = async () => {
-            await window.open('market://details?id=com.perrettj4.fantasytable'); return false
+        const openAppleStore = async () => {
+            await window.open('https://apps.apple.com/bf/app/fantasy-table-league-predictor/id1639002980', '_system'); return false
         }
-        const openStore2 = async () => {
-            await window.location.href('market://details?id=com.perrettj4.fantasytable; return false')
-        }
+
     </script>
 
 </body>
