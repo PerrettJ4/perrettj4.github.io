@@ -39,34 +39,23 @@
             target="SingleSecondaryWindowName">
             <img height='auto' width="70%" src='google-play-badge.png' />
         </a>
-        <a
-            onmousedown="window.open('https://play.google.com/store/apps/details?id=com.perrettj4.fantasytable', 'tab', '_system'); return false">
+        =
+        <div onclick="openStore3()">
             <img height='auto' width="70%" src='google-play-badge.png' />
-        </a>
+        </div>
+        <div onclick="openStore2()">
+            <img height='auto' width="70%" src='google-play-badge.png' />
+        </div>
+        =
         <div
             onblur="window.open('https://play.google.com/store/apps/details?id=com.perrettj4.fantasytable', 'tab', '_system'); return false">
             <img height='auto' width="70%" src='google-play-badge.png' />
         </div>
-        <a
-            onload="window.open('https://play.google.com/store/apps/details?id=com.perrettj4.fantasytable', '_blank', '_system'); return false">
-            <img height='auto' width="70%" src='google-play-badge.png' />
-        </a>
-        <div
-            ondblclick="window.open('https://play.google.com/store/apps/details?id=com.perrettj4.fantasytable', '_blank', '_system'); return false">
-            <img height='auto' width="70%" src='google-play-badge.png' />
-        </div>
-        <a
-            onloadeddata="window.open('https://play.google.com/store/apps/details?id=com.perrettj4.fantasytable', '_system', '_system'); return false">
-            <img height='auto' width="70%" src='google-play-badge.png' />
-        </a>
-        <div
-            onmouseenter="window.open('https://play.google.com/store/apps/details?id=com.perrettj4.fantasytable', '_system', '_system'); return false">
-            <img height='auto' width="70%" src='google-play-badge.png' />
-        </div>
+
         <div onclick="openStore()">
             <p>Open Store</p>
         </div>
-        <p>toast4</p>
+        <p>toast5</p>
     </div>
     <!-- Flickity HTML init -->
     <div id="container2">
@@ -103,7 +92,13 @@
 
     <script>
         const openStore = async () => {
-            await window.open('https://play.google.com/store/apps/details?id=com.perrettj4.fantasytable', '_system', '_system'); return false
+            await window.open('market://details?id=com.perrettj4.fantasytable', '_system', '_system'); return false
+        }
+        const openStore3 = async () => {
+            await window.open('market://details?id=com.perrettj4.fantasytable'); return false
+        }
+        const openStore2 = async () => {
+            await window.location.href('market://details?id=com.perrettj4.fantasytable; return false')
         }
     </script>
 
