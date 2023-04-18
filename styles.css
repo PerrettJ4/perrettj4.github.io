@@ -113,6 +113,9 @@ body::after {
   border-radius: 20px;
   overflow: hidden;
 }
+.gallery {
+  transition-duration: 0.5s;
+}
 
 a {
   display: flex;
@@ -167,6 +170,11 @@ a {
   .gallery-cell {
     border: 8px solid #55555577;
   }
+  .gallery:hover {
+    transition-duration: 0.5s;
+    box-shadow: 0 7px 35px #3201c8;
+    transform: scale(1.1);
+  }
 
   #leaguepredictor {
     filter: brightness(100%);
@@ -185,6 +193,11 @@ a {
   }
   .gallery-cell {
     border: 8px solid #55555577;
+  }
+  .gallery:hover {
+    transition-duration: 0.5s;
+    box-shadow: 0 7px 35px #ff335e;
+    transform: scale(1.1);
   }
 
   #leaguepredictor {
