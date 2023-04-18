@@ -112,9 +112,12 @@ body::after {
 .gallery-cell {
   border-radius: 20px;
   overflow: hidden;
+  background-color: transparent;
 }
 .gallery {
   transition-duration: 0.5s;
+  background-color: transparent;
+  border-radius: 20px;
 }
 
 a {
