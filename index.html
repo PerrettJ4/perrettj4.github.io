@@ -40,30 +40,33 @@
             <img height='auto' width="70%" src='google-play-badge.png' />
         </a>
         <a
-            onclick="window.open('https://play.google.com/store/apps/details?id=com.perrettj4.fantasytable', 'tab', '_system'); return false">
+            onmousedown="window.open('https://play.google.com/store/apps/details?id=com.perrettj4.fantasytable', 'tab', '_system'); return false">
             <img height='auto' width="70%" src='google-play-badge.png' />
         </a>
         <div
-            onclick="window.open('https://play.google.com/store/apps/details?id=com.perrettj4.fantasytable', 'tab', '_system'); return false">
+            onblur="window.open('https://play.google.com/store/apps/details?id=com.perrettj4.fantasytable', 'tab', '_system'); return false">
             <img height='auto' width="70%" src='google-play-badge.png' />
         </div>
         <a
-            onclick="window.open('https://play.google.com/store/apps/details?id=com.perrettj4.fantasytable', '_blank', '_system'); return false">
+            onload="window.open('https://play.google.com/store/apps/details?id=com.perrettj4.fantasytable', '_blank', '_system'); return false">
             <img height='auto' width="70%" src='google-play-badge.png' />
         </a>
         <div
-            onclick="window.open('https://play.google.com/store/apps/details?id=com.perrettj4.fantasytable', '_blank', '_system'); return false">
+            ondblclick="window.open('https://play.google.com/store/apps/details?id=com.perrettj4.fantasytable', '_blank', '_system'); return false">
             <img height='auto' width="70%" src='google-play-badge.png' />
         </div>
         <a
-            onclick="window.open('https://play.google.com/store/apps/details?id=com.perrettj4.fantasytable', '_system', '_system'); return false">
+            onloadeddata="window.open('https://play.google.com/store/apps/details?id=com.perrettj4.fantasytable', '_system', '_system'); return false">
             <img height='auto' width="70%" src='google-play-badge.png' />
         </a>
         <div
-            onclick="window.open('https://play.google.com/store/apps/details?id=com.perrettj4.fantasytable', '_system', '_system'); return false">
+            onmouseenter="window.open('https://play.google.com/store/apps/details?id=com.perrettj4.fantasytable', '_system', '_system'); return false">
             <img height='auto' width="70%" src='google-play-badge.png' />
         </div>
-        <p>toast3</p>
+        <div onclick="openStore()">
+            <p>Open Store</p>
+        </div>
+        <p>toast4</p>
     </div>
     <!-- Flickity HTML init -->
     <div id="container2">
@@ -98,7 +101,11 @@
 
 
 
-
+    <script>
+        const openStore = async () => {
+            await window.open('https://play.google.com/store/apps/details?id=com.perrettj4.fantasytable', '_system', '_system'); return false
+        }
+    </script>
 
 </body>
 
