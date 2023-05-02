@@ -75,12 +75,10 @@
     <script>
 
         const openAndroidStore = async () => {
-            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-                await window.open('://market/details?id=com.perrettj4.fantasytable'); return false
-            } else {
+
 
                 await window.open('https://play.google.com/store/apps/details?id=com.perrettj4.fantasytable'); return false
-            }
+           
         }
         const openAppleStore = async () => {
             
