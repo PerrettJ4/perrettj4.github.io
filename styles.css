@@ -8,8 +8,8 @@ body {
 
 body::after {
   content: "";
-  background-image: url("./splash1.png");
-  background-repeat: fixed;
+/*   background-image: url("./splash1.png");
+  background-repeat: fixed; */
   background-size: 100%;
   opacity: 0.2;
   height: 100%;
