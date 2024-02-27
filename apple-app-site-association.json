@@ -7,5 +7,11 @@
         "paths": ["*"]
       }
     ]
+  },
+  "activitycontinuation": {
+    "apps": ["{4XJ965QM22}.{com.perrettj4.fantasyTable}"]
+  },
+  "webcredentials": {
+    "apps": ["{4XJ965QM22}.{com.perrettj4.fantasyTable}"]
   }
 }

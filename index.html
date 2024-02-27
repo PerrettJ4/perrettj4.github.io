@@ -45,15 +45,52 @@
                 id="leaguepredictor" src='title1white.png' /></div>
 
         <!--     <p>Over 20,000 cumulative downloads in the past 3 months!</p> -->
-        <p id="p1">Put your knowledge to the test</p>
-        <p id="p2">The 100% free sports league prediction app</p>
-        <a onclick="openAppleStore()">
-            <img width="70%" src='./apple-app-store-badge.png' />
-        </a>
+        <p id="p1">Put Your Sports Knowledge To The Test</p>
+        <p id="p2">The 100% Free Sports League Prediction App</p>
+        <script>
+            const openAndroidStore = async () => {
 
-        <a onclick="openAndroidStore()">
-            <img height='auto' width="70%" src='google-play-badge.png' />
-        </a>
+
+                await window.open('https://play.google.com/store/apps/details?id=com.perrettj4.fantasytable'); return false
+
+            }
+            const openAppleStore = async () => {
+
+
+                await window.open('https://apps.apple.com/bf/app/fantasy-table-league-predictor/id1639002980'); return false
+
+            }
+
+            function renderButtons() {
+                if (/iPad|iPhone|iPod/.test(navigator.userAgent)) {
+                    // iOS device
+                    document.write(`
+                    <a onclick="openAppleStore()">
+                        <img width="70%" src='./apple-app-store-badge.png' />
+                    </a>
+                `);
+                } else if (/Android/.test(navigator.userAgent)) {
+                    // Android device
+                    document.write(`
+                    <a onclick="openAndroidStore()">
+                        <img height='auto' width="70%" src='google-play-badge.png' />
+                    </a>
+                `);
+                } else {
+                    // Web browser
+                    document.write(`
+                    <a onclick="openAppleStore()">
+                        <img width="70%" src='./apple-app-store-badge.png' />
+                    </a>
+                    <a onclick="openAndroidStore()">
+                        <img height='auto' width="70%" src='google-play-badge.png' />
+                    </a>
+                `);
+                }
+            }
+
+            renderButtons();
+        </script>
 
     </div>
     <!-- Flickity HTML init -->
@@ -84,33 +121,13 @@
             <div class="gallery-cell">
                 <img class="cell-image" width="100%" height: "100%" src='8.png' />
             </div>
-            <div class="gallery-cell">
-                <img class="cell-image" width="100%" height: "100%" src='9.png' />
-            </div>
-            <div class="gallery-cell">
-                <img class="cell-image" width="100%" height: "100%" src='10.png' />
-            </div>
+
         </div>
     </div>
 
 
 
-    <script>
 
-        const openAndroidStore = async () => {
-
-
-            await window.open('https://play.google.com/store/apps/details?id=com.perrettj4.fantasytable'); return false
-
-        }
-        const openAppleStore = async () => {
-
-
-            await window.open('https://apps.apple.com/bf/app/fantasy-table-league-predictor/id1639002980'); return false
-
-        }
-
-    </script>
 
 </body>
 
