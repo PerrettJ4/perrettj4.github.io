@@ -113,16 +113,23 @@ body::after {
   border-radius: 20px;
   overflow: hidden;
   background-color: transparent;
+  border: 8px solid #ff335e;
 }
 .gallery {
   transition-duration: 0.5s;
   background-color: transparent;
   border-radius: 20px;
+  transform: scaleY(1/1.08);
 }
 
 a {
   display: flex;
   justify-content: center;
+}
+
+.cell-image {
+  height: 100%;
+  transform: scaleY(1.08);
 }
 
 #titleRow {
@@ -178,12 +185,10 @@ a {
     filter: invert(13%) sepia(5%) saturate(175%) hue-rotate(22deg)
       brightness(93%) contrast(103%) grayscale(1);
   }
-  .gallery-cell {
-    border: 8px solid black;
-  }
+
   .gallery:hover {
     transition-duration: 0.5s;
-    box-shadow: 0 7px 35px #3201c8;
+    box-shadow: 0 7px 35px #ff335e;
     transform: scale(1.1);
   }
 
@@ -202,9 +207,7 @@ a {
     filter: invert(100%) sepia(0%) saturate(4160%) hue-rotate(63deg)
       brightness(115%) contrast(92%) grayscale(1);
   }
-  .gallery-cell {
-    border: 8px solid black;
-  }
+
   .gallery:hover {
     transition-duration: 0.5s;
     box-shadow: 0 7px 35px #ff335e;
