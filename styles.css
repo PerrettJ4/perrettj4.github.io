@@ -110,16 +110,18 @@ body::after {
 }
 
 .gallery-cell {
-  border-radius: 20px;
   overflow: hidden;
   background-color: transparent;
-  border: 8px solid #ff335e;
+  border: 8px inset;
+  border-radius: 2rem;
 }
 .gallery {
   transition-duration: 0.5s;
   background-color: transparent;
-  border-radius: 20px;
   transform: scaleY(1/1.08);
+  box-shadow: 7px 7px 95px black;
+  border-radius: 4rem;
+  transform: scale(1.1);
 }
 
 a {
@@ -147,6 +149,12 @@ a {
     justify-content: space-between;
     margin-top: 6%;
     margin-bottom: 0%;
+  }
+  .gallery-cell {
+    border-radius: 5rem;
+  }
+  .gallery {
+    border-radius: 10rem;
   }
   #container2,
   #container1 {
@@ -188,8 +196,9 @@ a {
 
   .gallery:hover {
     transition-duration: 0.5s;
-    box-shadow: 0 7px 35px #ff335e;
-    transform: scale(1.1);
+    /* box-shadow: 0 7px 35px #ff335e; */
+    box-shadow: 0 7px 35px black;
+    transform: scale(1.2);
   }
 
   #leaguepredictor {
@@ -211,7 +220,7 @@ a {
   .gallery:hover {
     transition-duration: 0.5s;
     box-shadow: 0 7px 35px #ff335e;
-    transform: scale(1.1);
+    transform: scale(1.2);
   }
 
   #leaguepredictor {
